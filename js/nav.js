@@ -26,6 +26,7 @@ $("#menu a").each(function () {
 
 //Bind change listener to the select
 $select.change(function () {
+    event.preventDefault();
     //Go to select's location
     window.location = $select.val();
 });
