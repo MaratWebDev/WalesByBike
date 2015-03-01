@@ -3,9 +3,9 @@ a {
 	text-decoration: none;
 }
 
-em {
+/*em {
 	font-style: italic;
-}
+}*/
 
 .wrapper, 
 .content {
@@ -25,13 +25,15 @@ header {
 
 header h1 {
 	color: #fff;
-	font-size: 200%;
-	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 2.5em;
+	font-family: 'Norican', cursive;
+	font-style: italic;
 	padding-bottom: 20px; 
 }
 
 .logotype {
 	float: left;
+	margin-left: 20px;
 }
 
 .logo {
@@ -53,14 +55,16 @@ nav li {
 	border-right: 1px solid #616161;
 	border-top: 1px solid #616161;
 	border-left: 1px solid #616161;
-	drpdown navigation
+
+	/*  dropdown navigation*/
 	position: relative;
 }
 
 nav li a {
 	padding: 10px 30px;
 	display: block;
-	color: #ED4227;
+	color: #fff;
+	font-family: 'Maven Pro', sans-serif;
 }
 
 .selected,
@@ -79,6 +83,11 @@ nav li:hover {
 	width: 40px;
 	text-indent: -9999px;
 }
+nav li a:hover, 
+.selected a {
+	color: #D30C16;
+}
+
 
 
 /*DROPDOWN NAVIGATION*/
@@ -110,7 +119,7 @@ nav ul li:hover > ul {
 }
 
 nav ul li:hover > ul li a:hover {
-	background-color:  #3E3F41;
+	background-color:  #2D3D47;
 }
 
 
@@ -122,16 +131,9 @@ nav ul:after {
 
 /*	CONTENT */
 body {
-	font-family: Arial, Verdana, sans-serif;
+	font-family: 'Maven Pro', sans-serif;
 	font-size: 20px;
 	background: #e1ddda;
-}
-
-h2 {
-	font-size: 150%;
-	font-family: Tahoma, Geneva, sans-serif;
-	padding-bottom: 15px;
-
 }
 
 .content {
@@ -211,15 +213,19 @@ td {
 
 
 h2 {
-	font-size: 150%;
+	font-size: 1.5em;
+	padding-bottom: 15px;
 }
 
 h3 {
-	font-size: 112.5%;
+	font-size: 1.2em;
 }
 h2, 
 h3 {
 	font-weight: bold;
+	font-family: 'Maven Pro', sans-serif;
+	color: #D30C16;
+
 }
 
 /*	LINKS AND PARTNERS	*/
@@ -246,6 +252,11 @@ footer {
 
 
 @media screen and (max-width: 568px) {
+	.blocks {
+		border: none;
+		box-shadow: none;
+		margin: 0;
+	}
     .blocks ul {
         display: none;
     }
@@ -260,17 +271,30 @@ footer {
     	display: none;
     }
     nav li {
-        margin: 1rem;
+    	margin: 0;
+    	width: 100%;
+    	border: none;
     }
+
+    nav li a {
+    	text-align: center;
+    }
+
+    nav ul ul li {
+    	display: none;
+    }
+
+
     .nav-collapse.active {
-    	display: block;
-        width: 100px;
-        margin: 1rem;
-        line-height: 1rem;
+    	float: none;
+    	display: inline-block;
+    	width: 100%;
+        /*margin: 1rem;
+        line-height: 1rem;*/
     }
     
     .content img {
-        padding: 0;
+        padding: 0; 
     }
     .right {
         padding: 1.5rem 0;
