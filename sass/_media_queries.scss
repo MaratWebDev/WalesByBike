@@ -1,0 +1,38 @@
+/* MediaQueries*/
+
+
+@media screen and (max-width: $break-medium) {
+    
+    .nav-toggle {
+    	display: block;
+	}
+    .nav-collapse {
+    	display: none;
+    }
+    nav li {
+    	margin: 0;
+    	width: 100%;
+    	border: none;
+        border-radius: 0;
+    }
+
+    nav li a {
+    	text-align: center;
+    }
+
+    nav ul ul li {
+    	display: none;
+    }
+
+
+    .nav-collapse.active {
+    	float: none;
+    	display: inline-block;
+    	width: 100%;
+        /*margin: 1rem;
+        line-height: 1rem;*/
+    }
+    
+   
+    
+}

@@ -1,0 +1,111 @@
+/*	HEADER	*/
+
+
+header {
+	background-color: $header-background;
+    
+        .logo {
+            float: left;
+            display: inline-block;
+            background: url("../img/logo.png") no-repeat left top;
+            background-size: 50px 50px;
+            height: 50px;
+            h1 {
+                color: #fff;
+                font-size: 1.2em;
+                font-family: 'Norican', sans-serif;
+                display: inline-block;
+                padding-left: 60px;
+                padding-top: 15px;
+            }
+        }
+}
+
+.banner {
+    background: $header-background url("../img/background_bike.jpg") center center no-repeat;
+    height: 350px;
+    background-size: cover;
+    
+    .content {
+        position: relative;
+        height: auto;
+        padding: 0;
+        p {
+            color: #fff;
+            position: absolute;
+            top: 225px;
+            left: 20px;
+            background-color: #000;
+            background-color: rgba(0,0,0,0.7);
+            padding: 20px;
+            
+             @media screen and (max-width: $break-medium) {
+                max-width: 200px;
+                margin-left: 20px;
+             }
+        }
+    }    
+}
+
+
+
+
+/* Navigation */
+
+nav {
+    float: right;
+    margin: 10px 10px 0 0;
+    
+    li {
+        display: inline-block;
+        margin-left: 20px;
+        border-radius: 5px;
+        
+        a {
+            padding: 10px 30px;
+            display: block;
+            color: #fff;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: .7em;
+        }
+    }
+    .selected,
+    li:hover {
+	   background-color: #fff;
+        a {
+            color: #0875C6;
+        }
+    }
+
+}
+
+.nav-toggle {
+	display: none;
+	position: absolute;
+	right: 1rem;
+	top: 25px;
+    color: #fff;
+    padding: 20px;
+}
+
+
+
+
+/*	HEADERS */
+
+
+h2 {
+	font-size: 1.5em;
+	padding-bottom: 15px;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+h2, 
+h3 {
+	font-weight: bold;
+	font-family: 'Helvetica Neue', sans-serif;
+	color: #0875C7;
+
+}

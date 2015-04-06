@@ -3,43 +3,49 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Wales by bike/contact</title>
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link href='http://fonts.googleapis.com/css?family=Norican' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
+		<title>Wales by bike/offers</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<header>
-			<div class="wrapper">
-				<div class="logotype">
-					<a href="index.html" ><img src="img/Logo.png" class="logo" alt="Logo"></a>
-					<a href="index.html" ><h1><em>Wales</em> by Bike</h1></a>
-				</div>
-				<a href="#menu" class="nav-toggle">Menu</a>
+			<div class="wrapper">	
+                <a href="index.html" class="logo">
+				    <h1>Wales by Bike</h1>
+                </a>
+                <a href="#menu" class="nav-toggle">
+                <span class="icon-menu"></span>
+                </a>
 				<nav id="menu" class="nav-collapse">
 					<ul>
-						<li><a href="index.html">Offers</a></li>
+						<li><a href="index.html">Offers</a>
+						</li>
 						<li><a href="about.html">About</a></li>
 						<li class="selected"><a href="contact.html">Contact</a></li>
 					</ul>
+                    
 				</nav>
 			</div>
 		</header>
-
+         <div class="banner">
+            <div class="content">
+                <p>Great Experiance with affordable prices</p>
+            </div>
+        </div>
+        
 		<div class="content">
 			<div class="left">
 			<ul>
 					
-					<li><img src="img/mailicon.png" class="icon" alt="Mail"><a href="mailto:marat@walesbybike.com">marat@walesbybike.com</a></li>
+					<li class="icon-envelop" alt="Mail"><a href="mailto:marat@walesbybike.com">marat@walesbybike.com</a></li>
 					
-					<li><img src="img/phoneicon.png" class="icon" alt="Phone"><a href="tel:0771234567">0771234567</a></li>
+					<li class="icon-phone" alt="Phone"><a href="tel:0771234567">0771234567</a></li>
 			</ul>
 				<table>
 					<thead>
 						<tr>
 							<th>Days</th>
-							<th>Opening Hours</th>
+							<td>Opening Hours</td>
 						</tr>
 					</thead>
 				<tbody>
@@ -79,8 +85,7 @@
 				<address>
 					Wales. Llandudno.<br /> 45 West Brompton.<br /> SE48TJ
 				</address>
-
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19066.67031227798!2d-3.8239764!3d53.319376600000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4864e1e2afa75737%3A0x6c919e5e368577e0!2sLlandudno%2C+Conwy!5e0!3m2!1sen!2suk!4v1411238699986" width="450" height="450" frameborder="0" ></iframe>
+                <div id="map"></div>
 			</div>
 		</div>
 			<footer>
@@ -91,5 +96,6 @@
 			</footer>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/nav1.js" type="text/javascript" charset="utf-8"></script>
+     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	</body>
 </html>
